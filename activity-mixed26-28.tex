@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{palatino}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\usetikzlibrary{trees}
+\pagestyle{fancy}
+
+\lhead{MTH 201}
+\chead{Mixed Activity for 2.6, 2.7, 2.8}
+\rhead{2018-10-17}
+
+\begin{document}
+
+\begin{center}
+    \Large{Mixed Practice --- Derivatives of Inverse Functions, Implicit Differentiation, and Indeterminate Forms}
+\end{center}
+
+
+\subsection*{Derivatives of Inverse Functions}
+
+Find each of the following derivatives. Your group will be given one of these to put on the board. 
+
+\begin{enumerate}
+    \item $y = \arctan(t^2 + t+ 1)$
+    \item $y = x \ln x$
+    \item $y = \ln \left( xe^x \right)$
+    \item $y = e^x \arcsin(x)$
+    \item $y = \dfrac{1}{\arctan(x)}$
+    \item $y = \ln(\ln(x))$
+\end{enumerate}
+
+
+\subsection*{Derivatives of implicit functions}
+
+Consider the equation (not function) $x^3 + y^3 = 1$. Notice that the point $(1,1)$ satisfies this equation. 
+
+\begin{enumerate}
+    \item Find $dy/dx$ in terms of $x$ and $y$. Hint: Start by taking the derivative with respect to $x$ of both sides. 
+    \item Find the slope of the tangent line to the curve that is traced out by this equation, at the point $(-1,1)$. 
+\end{enumerate}
+
+\subsection*{Indeterminate forms and L'Hopital's Rule}
+
+Consider the limit 
+$$\lim_{x \to \pi/2} \frac{\cos^2 x}{\sin x - 1}$$
+
+\begin{enumerate}
+    \item What do you get when you try to directly evaluate $x = \pi/2$ into the function whose limit you are taking? 
+    \item Does the answer to the previous question mean that the limit as $x \to \pi/2$ of this function fails to exist? 
+    \item Using Desmos, make a graph of $y = \frac{\cos^2 x}{\sin x - 1}$. Does it appear that the limit as $x \to \pi/2$ exists? If so, what do you think it equals? 
+    \item We can use L'Hopital's Rule to evaluate this limit. Why? 
+    \item Go ahead and use L'Hopital's Rule to evaluate the limit. 
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\usetikzlibrary{trees}
+\pagestyle{fancy}
+
+\lhead{MTH 201 (Calculus)}
+\chead{Activities: Introduction to the Chain Rule}
+\rhead{2018-10-08}
+
+\begin{document}
+
+\subsection*{Part 1: Basic Chain Rule}
+
+For each of these functions, identify an inner function $g$ and an outer function $f$ to write the function in the form $f(g(x))$. Determine $f'(x)$, $g'(x)$, and $f'(g(x))$ and then apply the Chain Rule to determine the derivative of the function. \\
+
+\begin{tcolorbox}
+\noindent
+Example: $z(x) = \sqrt{e^x + x^2}$
+\begin{itemize}
+    \item The inner function is $g(x) = e^x + x^2$. 
+    \item The outer function is $f(x) = \sqrt{x}$. 
+    \item $f'(x) = \frac{1}{2}x^{-1/2}$ and $g'(x) = e^x + 2x$. 
+    \item $f'(g(x)) = \frac{1}{2}(e^x + x^2)^{-1/2}$. 
+    \item Therefore 
+    $$z'(x) = f'(g(x)) \cdot g'(x) = \frac{1}{2}(e^x + x^2)^{-1/2} \cdot (e^x + 2x)$. 
+\end{itemize}
+\end{tcolorbox}
+
+\begin{enumerate}
+    \item $a(x) = (x^2 + 2x - \sqrt{x})^{10}$
+    \item $b(x) = cos(x^4)$
+    \item $c(x) = 2^{\sin(x)}$
+    \item $d(x) = \sqrt{\tan(x)}$
+    \item $h(x) = \cot^5 (x)$
+    \item $j(x) = (\sec(x) + e^x)^9$
+\end{enumerate}
+
+\vskip
+
+\subsection*{Part 2: Combining rules}
+
+Find the derivative of each of the following functions. State the rule(s) that you use and identify the overall result. 
+
+\begin{enumerate}
+    \item $p(r) = 4\sqrt{r^6 + 2e^r}$
+    \item $m(v) = \sin(v^2) \cos(v^3)$
+    \item $h(y) = \dfrac{\cos(10y)}{e^{4y}+1}$
+    \item $s(z) = 2^{z^2 \sec (z)}$
+    \item $c(x) = \sin(e^{x^2})$
+    \item $d(t) = e^{\sin(x) \cos(x)$
+\end{enumerate}
+
+\end{document}
